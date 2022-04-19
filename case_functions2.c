@@ -139,7 +139,7 @@ int print_bigS(va_list l, flags_t *f)
 		{
 			_puts("\\x");
 			count += 2;
-			res = convert(s[i], 16, 0);
+			res = convert_to(s[i], 16, 0);
 			if (!res[1])
 				count += _putchar('0');
 			count += _puts(res);
