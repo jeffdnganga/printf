@@ -19,5 +19,7 @@ int print_base16_upper_lower(va_list arg, char *representation);
 int loop_format(va_list arg, const char *string);
 int call_function_manager(char aux, va_list arg);
 int check_percent(int *flag, char aux);
+int print_bigS(va_list l, flags_t *f);
+char convert(unsigned long int num, int base, int lowercase);
 
 #endif
